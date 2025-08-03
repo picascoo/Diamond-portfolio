@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diamond Nyagaka - Software Developer Portfolio</title>
+
+    <!-- Font Awesome for icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts: Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+        // Dark mode toggle
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <button
+        class="dark-mode-toggle"
+        aria-label="Toggle Dark Mode"
+        onclick="toggleDarkMode()"
+    >
+        Toggle Dark Mode
+    </button>
+
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Main Navigation">
+                <a href="#" class="logo">DIAMOND'S Portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" tabindex="-1">
+        <div class="container">
+            <h1>
+                I AM DIAMOND NYAGAKA
+                <span>& I AM A SOFTWARE DEVELOPER.</span>
+            </h1>
+            <p>
+                Blending a strong foundation in Gender and Development Studies with
+                a passion for mental health and technology, I build tech-driven
+                solutions that are socially conscious and human-centered.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">My Works</a>
+                <a href="#contact" class="btn btn-outline">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                Know <span>About Me</span>
+            </h2>
+            <div class="about-content">
+                <p>
+                    I am Diamond Nyagaka, a software developer with a background in
+                    Gender and Development Studies and a minor in Psychology from Kenyatta
+                    University. I am also a passionate mental health advocate and a firm
+                    believer in using technology for social good. My journey into tech
+                    was driven by a desire to create inclusive and empowering digital
+                    experiences.
+                </p>
+                <p>
+                    I specialize in Python, SQL, and web development, and I’m currently
+                    expanding my skill set in building modern, scalable applications. I
+                    am also exploring startup development with a focus on mental health,
+                    education, and social justice.
+                </p>
+                <div class="about-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="assets/DiamondResume.pdf.pdf" download class="btn btn-outline">Download My CV</a>
+
+                        
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                My <span>Skills</span>
+            </h2>
+            <div class="skills-list">
+                <div class="skill-pie" data-skill="Python" data-percent="33"></div>
+                <div class="skill-pie" data-skill="HTML" data-percent="55"></div>
+                <div class="skill-pie" data-skill="CSS" data-percent="56"></div>
+                <div class="skill-pie" data-skill="Database & SQL" data-percent="23"></div>
+                <div class="skill-pie" data-skill="JavaScript" data-percent="29"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                My <span>Projects</span>
+            </h2>
+            <div class="projects-list">
+                <div class="project-item">Mental Health Awareness Web App</div>
+                <div class="project-item">GBV Awareness Campaign (Kismayu)</div>
+                <div class="project-item">
+                    Community Wellness Chatbot using Python
+                </div>
+                <div class="project-item">Online Support Platform for Survivors</div>
+                <div class="project-item">NGO Volunteer Tracking Database (SQL)</div>
+                <div class="project-item">
+                    Responsive Educational Website on Gender Rights
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                Get In <span>Touch</span>
+            </h2>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> <a href="tel:+254796188183">0796188183</a></p>
+                <p><strong>Email:</strong> <a href="mailto:diamondnyagaka@gmail.com">diamondnyagaka@gmail.com</a></p>
+            </div>
+            <form>
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    name="name"
+                    required
+                    aria-label="Your Name"
+                />
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    name="email"
+                    required
+                    aria-label="Your Email"
+                />
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    name="message"
+                    required
+                    aria-label="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Diamond Nyagaka. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Pie Chart Script -->
+    <script>
+        // Render simple pie charts using conic-gradient
+        document.querySelectorAll(".skill-pie").forEach((element) => {
+            const percent = element.getAttribute("data-percent");
+            const skill = element.getAttribute("data-skill");
+            element.style.setProperty(
+                "--percent",
+                percent + "%"
+            );
+            element.innerHTML = `
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg"
+                        d="M18 2.0845
+                           a 15.9155 15.9155 0 0 1 0 31.831
+                           a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <path class="circle"
+                        stroke-dasharray="${percent}, 100"
+                        d="M18 2.0845
+                           a 15.9155 15.9155 0 0 1 0 31.831
+                           a 15.9155 15.9155 0 0 1 0 -31.831"
+                    />
+                    <text x="18" y="20.35" class="percentage">${percent}%</text>
+                </svg>
+                <div class="skill-name">${skill}</div>
+            `;
+        });
+    </script>
+</body>
+</html>
