@@ -32,8 +32,6 @@ HTML5 — Semantic and accessible markup.
 
 CSS3 — Custom styling with animations, variables, and responsiveness.
 
-JavaScript (vanilla) — For dark mode toggle and dynamic charts.
-
 Font Awesome — Icon set.
 
 Google Fonts — “Poppins” font family for a clean UI.
